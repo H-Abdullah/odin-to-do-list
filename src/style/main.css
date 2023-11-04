@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+#main {
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 10vh;
+}
+
+header a {
+  content: 'TODO LIST';
+  background-color: blue;
+  border: 1px solid red;
+}
+
+header nav {
+  width: auto;
+  height: inherit;
+  border: 1px solid red;
+}
