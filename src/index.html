@@ -7,15 +7,22 @@
   <title>TODO LIST</title>
 </head>
 <body>
-  <div id="main" class="flex">
+  <div id="main-interface" class="flex">
     <header class="flex">
-      <a href="#home" class="flex"></a>
+      <a href="#home" class="flex">TODO LIST</a>
       <nav id="header-nav" class="flex">
         <div id="user-name" class="flex">GUEST</div>
-        <button id="login" class="flex">LOGIN</button>
+        <button type="button" id="login-btn" class="flex">LOGIN</button>
       </nav>
     </header>
-    <main id="content" class="flex"></main>
+    <main id="content" class="flex">
+      <div id="add-task-wrapper" class="flex">
+        <input id="add-task-input" name="add-task" type="text" placeholder="ADD TASK">
+        <label for="add-task" class="flex">URGENT</label>
+        <button id="add-task-btn" class="flex"></button>
+      </div>
+      <div class="task-list-wrapper flex"></div>
+    </main>
   </div>
   <script src="./index.js"></script>
 </body>
