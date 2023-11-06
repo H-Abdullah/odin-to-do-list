@@ -102,6 +102,7 @@ main {
   padding-left: var(--default-task-padding);
   background-color: #fff;
   border-radius: var(--default-border-radius);
+  flex: 1;
 }
 
 #add-task-wrapper label {
