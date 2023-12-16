@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f3f3f3;
+  --hover-color: #0000004d;
+}
+
+/* simplified meyer reset */
+/* more details on https://meyerweb.com/eric/tools/css/reset/ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styling */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
+}
+
+/* sidebar styling */
+#sidebar {
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  gap: 30px;
+  background-color: var(--secondary-color);
+}
+
+#sidebar-title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+#personal-task {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: rgba(0, 0, 0, 1);
+}
+
+#personal-task-title:hover {
+  background-color: transparent;
+}
+
+.sidebar-panel {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: center;
+  letter-spacing: 1.1px;
+  padding: 0 30px;
+}
+
+.sidebar-panel:hover {
+  background-color: var(--hover-color);
+}
+
+.fa-hashtag {
+  margin-right: 10px;
+}
+
+#new-task {
+  margin-top: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+#new-task {
+}
+
+#mainbar {
+  width: 75vw;
+  height: 100vh;
+}
+
+#add-task-form-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.visible {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+#add-task-form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vh;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+#hide-task-form-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#hide-task-form-btn:hover {
+  background-color: var(--hover-color);
+}
