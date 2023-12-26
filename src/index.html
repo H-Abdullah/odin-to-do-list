@@ -15,22 +15,29 @@
       </div>
       <hr>
       <div id="add-task-panel">
+        <p class="input-error hide-error"></p>
         <label for="add-task"></label>
-        <input type="text" id="add-task" name="add-task" placeholder="New Task">
+        <input type="text" id="add-task" name="add-task" minlength="4" maxlength="15" placeholder="New Task" required>
       </div>
       <div id="task-panel">
-        <div class="panel">
-          <i class="fa-solid fa-thumbtack"></i>
+        <div class="panel" draggable="true">
+          <i class="fa-solid fa-bars"></i>
           <p>Task 1</p>
         </div>
-        <div class="panel">
-          <i class="fa-solid fa-thumbtack"></i>
+        <div class="panel" draggable="true">
+          <i class="fa-solid fa-bars"></i>
           <p>Task 2</p>
         </div>
-        <div class="panel">
-          <i class="fa-solid fa-thumbtack"></i>
+        <div class="panel" draggable="true">
+          <i class="fa-solid fa-bars"></i>
           <p>Task 3</p>
         </div>
+      </div>
+      <div id="trash-can-panel">
+        <div id="trash-can-icon-wrapper">
+          <i class="fa-regular fa-trash-can fa-xl"></i>
+        </div>
+        <div class="trash-can-info">Drag and drop to delete!</div>
       </div>
     </section>
     <section id="mainbar"></section>
